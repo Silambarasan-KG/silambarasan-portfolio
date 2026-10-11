@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Silambarasan K G — Senior Developer and Technical Lead specializing in RPA, Python automation, and process delivery.">
+<title>Silambarasan K G | Senior Developer & Technical Lead</title>
+<style>
+:root{--bg:#07111f;--panel:#0e1d31;--panel2:#12243b;--text:#eef5ff;--muted:#a9bad0;--blue:#60a5fa;--cyan:#67e8f9;--line:rgba(174,205,244,.15);--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#102b4b 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(7,17,31,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}.brand{font-weight:800;letter-spacing:.2px}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:.93rem}.navlinks a:hover{color:var(--cyan)}
+.hero{padding:90px 0 74px;display:grid;grid-template-columns:1.4fr .8fr;gap:46px;align-items:center}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:2.3px;font-size:.78rem;font-weight:800}.hero h1{font-size:clamp(2.7rem,6vw,4.7rem);line-height:1.05;letter-spacing:-2px;margin:16px 0}.hero h1 em{font-style:normal;color:var(--blue)}.hero p{max-width:650px;color:var(--muted);font-size:1.08rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;padding:12px 18px;border-radius:10px;font-weight:750;border:1px solid var(--line);transition:.2s}.btn.primary{background:linear-gradient(100deg,#60a5fa,#67e8f9);color:#07111f;border:0}.btn:hover{transform:translateY(-2px)}.hero-card{background:linear-gradient(145deg,rgba(18,36,59,.95),rgba(9,24,42,.95));border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 25px 80px #0003}.monogram{width:74px;height:74px;border-radius:20px;background:linear-gradient(135deg,#60a5fa,#67e8f9);display:grid;place-items:center;color:#07111f;font-size:1.7rem;font-weight:900}.hero-card h2{margin:18px 0 4px;font-size:1.3rem}.hero-card p{font-size:.95rem;margin:0 0 18px}.pillrow{display:flex;flex-wrap:wrap;gap:8px}.pill{font-size:.78rem;color:#d7eaff;background:#193452;border:1px solid #315171;border-radius:999px;padding:6px 10px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:78px}.stat{padding:22px;background:rgba(14,29,49,.7);border:1px solid var(--line);border-radius:16px}.stat strong{display:block;font-size:2rem;color:var(--cyan);line-height:1.2}.stat span{color:var(--muted);font-size:.9rem}
+section{padding:38px 0 60px;scroll-margin-top:90px}.sectionhead{margin-bottom:24px}.sectionhead .eyebrow{font-size:.72rem}.sectionhead h2{font-size:clamp(1.8rem,4vw,2.5rem);letter-spacing:-.8px;margin:6px 0}.sectionhead p{color:var(--muted);max-width:720px;margin:0}.aboutgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.panel{background:rgba(14,29,49,.72);border:1px solid var(--line);border-radius:18px;padding:24px}.panel h3{margin:0 0 12px}.panel p{color:var(--muted);margin:0}.checklist{list-style:none;padding:0;margin:0}.checklist li{padding:10px 0;border-bottom:1px solid var(--line);color:var(--muted)}.checklist li:last-child{border:0}.checklist li:before{content:"↗";color:var(--cyan);font-weight:900;margin-right:10px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill h3{font-size:1rem;margin:0 0 12px}.skill p{color:var(--muted);font-size:.92rem;margin:0}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{position:relative;overflow:hidden}.project .tag{color:var(--cyan);font-size:.75rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:800}.project h3{font-size:1.2rem;margin:8px 0}.project p{color:var(--muted);margin:0}.project .tech{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}.tech span{font-size:.78rem;border:1px solid var(--line);border-radius:7px;padding:4px 8px;color:#d8e7fa}
+.timeline{display:grid;gap:14px}.role{display:grid;grid-template-columns:190px 1fr;gap:18px}.role .date{color:var(--cyan);font-size:.9rem;font-weight:700}.role h3{margin:0}.role p{color:var(--muted);margin:4px 0 0}
+.contact{display:flex;align-items:center;justify-content:space-between;gap:22px;background:linear-gradient(110deg,#102b49,#10283e);border:1px solid var(--line);padding:30px;border-radius:22px}.contact h2{margin:0 0 5px}.contact p{color:var(--muted);margin:0}.contact .btn{white-space:nowrap}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.85rem;margin-top:48px}.footrow{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:780px){.hero{grid-template-columns:1fr;padding-top:62px}.hero-card{max-width:500px}.navlinks{gap:12px;font-size:.82rem}.stats{grid-template-columns:1fr;gap:10px;margin-bottom:40px}.stat{display:flex;align-items:center;justify-content:space-between}.aboutgrid,.skills,.projects{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:4px}.contact{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){nav{align-items:flex-start;padding:16px 0;flex-direction:column}.navlinks{flex-wrap:wrap}.hero h1{letter-spacing:-1px}.panel{padding:19px}.contact{padding:23px}}
+</style>
+</head>
+<body>
+<header><nav class="wrap"><a class="brand" href="#home">SILAMBARASAN<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></nav></header>
+<main>
+<div class="wrap">
+<section class="hero" id="home">
+<div><div class="eyebrow">RPA • Python • Intelligent Automation</div><h1>Building reliable automation.<br><em>Leading delivery.</em></h1><p>I'm Silambarasan K G, a Senior Developer and Technical Lead focused on designing, developing, and supporting automation solutions that help teams streamline complex business processes.</p><div class="actions"><a class="btn primary" href="#projects">Explore my work ↘</a><a class="btn" href="Silambarasan_KG_Resume.pdf" target="_blank" rel="noopener">View resume ↗</a><a class="btn" href="Silambarasan_KG_Resume.pdf" download>Download resume ↓</a></div></div>
+<div class="hero-card"><div class="monogram">SK</div><h2>Silambarasan K G</h2><p>Senior Developer &amp; Technical Lead</p><div class="pillrow"><span class="pill">UiPath</span><span class="pill">Blue Prism</span><span class="pill">Python</span><span class="pill">Jiffy.ai</span><span class="pill">Healthcare RPA</span></div></div>
+</section>
+<div class="stats"><div class="stat"><strong>30+</strong><span>Automation processes developed</span></div><div class="stat"><strong>16</strong><span>Team members reporting to me</span></div><div class="stat"><strong>9+ yrs</strong><span>Professional experience</span></div></div>
+<section id="about"><div class="sectionhead"><div class="eyebrow">A little about me</div><h2>Technology, process, and people.</h2><p>I work across the automation lifecycle—from gathering client requirements and documenting processes to development, production support, and delivery coordination.</p></div><div class="aboutgrid"><div class="panel"><h3>What I bring</h3><p>Hands-on RPA and Python development experience, with a focus on dependable automation, issue resolution, and practical solutions for business operations. I also work directly with clients to understand requirements and prepare Process Design Documents (PDDs).</p></div><div class="panel"><h3>Core strengths</h3><ul class="checklist"><li>Client communication and requirement gathering</li><li>PDD preparation and process understanding</li><li>Automation development and support</li><li>Team coordination and technical guidance</li><li>Production issue analysis and resolution</li></ul></div></div></section>
+<section id="skills"><div class="sectionhead"><div class="eyebrow">Toolbox</div><h2>Skills &amp; technologies</h2><p>Automation tools and technologies used across development and support work.</p></div><div class="skills">
+<div class="panel skill"><h3>RPA platforms</h3><p>UiPath · Blue Prism · Jiffy.ai · Orchestrator queues, assets, jobs, triggers, and logs</p></div>
+<div class="panel skill"><h3>Development</h3><p>Python · HTML · CSS · API integration · Excel automation · PDF processing</p></div>
+<div class="panel skill"><h3>Automation types</h3><p>Desktop and web automation · Email workflows · Citrix automation · Document and data processing</p></div>
+<div class="panel skill"><h3>Delivery &amp; support</h3><p>Requirement gathering · PDD/SDD · Production support · Exception handling · Troubleshooting</p></div>
+<div class="panel skill"><h3>Collaboration tools</h3><p>Jira · Freshdesk · ClickUp</p></div>
+<div class="panel skill"><h3>Domain experience</h3><p>US healthcare workflows, including payment posting and ERA/EOB-related automation</p></div>
+</div></section>
+<section id="projects"><div class="sectionhead"><div class="eyebrow">Selected work</div><h2>Automation projects</h2><p>Examples of projects worked on. Descriptions are kept high-level to protect client and business information.</p></div><div class="projects">
+<div class="panel project"><div class="tag">Python · Healthcare</div><h3>Payment Posting Automation</h3><p>Automation supporting US healthcare payment-posting workflows involving ERA/EOB information and structured data handling.</p><div class="tech"><span>Python</span><span>PDF / Data processing</span><span>Healthcare</span></div></div>
+<div class="panel project"><div class="tag">UiPath</div><h3>Detail Trial Balance</h3><p>RPA project focused on automating a detail trial balance workflow.</p><div class="tech"><span>UiPath</span><span>Business process automation</span></div></div>
+<div class="panel project"><div class="tag">UiPath</div><h3>eCommerce Sales Order Import</h3><p>Automation for an eCommerce sales-order import process.</p><div class="tech"><span>UiPath</span><span>Data handling</span></div></div>
+<div class="panel project"><div class="tag">Python</div><h3>Final Audit Approval</h3><p>Python-based automation supporting a final audit approval workflow.</p><div class="tech"><span>Python</span><span>Workflow automation</span></div></div>
+<div class="panel project"><div class="tag">Jiffy.ai</div><h3>Creative Tracking</h3><p>Automation project for a creative tracking process.</p><div class="tech"><span>Jiffy.ai</span><span>Process automation</span></div></div>
+</div></section>
+<section id="experience"><div class="sectionhead"><div class="eyebrow">Career path</div><h2>Experience</h2></div><div class="timeline">
+<div class="panel role"><div class="date">June 2022 – Present</div><div><h3>Droidal LLC</h3><p>Senior Developer &amp; Technical Lead — RPA development and support, client requirement gathering, PDD preparation, team leadership, and automation delivery.</p></div></div>
+<div class="panel role"><div class="date">September 2018 – May 2022</div><div><h3>Reliance LTD</h3><p>RPA Developer</p></div></div>
+<div class="panel role"><div class="date">April 2016 – September 2018</div><div><h3>Royal Enfield Brand Store</h3><p>Backend Support Executive</p></div></div>
+<div class="panel role"><div class="date">July 2014 – April 2016</div><div><h3>Sun Direct</h3><p>Junior Service Technician</p></div></div>
+</div></section>
+<section id="education"><div class="sectionhead"><div class="eyebrow">Learning</div><h2>Education &amp; training</h2></div><div class="skills">
+<div class="panel skill"><h3>Bachelor of Computer Applications (BCA)</h3><p>Alagappa University · 2018</p></div>
+<div class="panel skill"><h3>Diploma — Electronics &amp; Communication Engineering</h3><p>Sri Ram Polytechnic College · 2013</p></div>
+<div class="panel skill"><h3>Training &amp; certifications</h3><p>UiPath training · Jiffy.ai L1/L2 · MCITP Hardware and Networking</p></div>
+</div></section>
+<section id="contact"><div class="contact"><div><h2>Have an automation challenge?</h2><p>Reach out to discuss RPA development, process improvement, or technical leadership opportunities.</p></div><div class="actions"><a class="btn" href="Silambarasan_KG_Resume.pdf" target="_blank" rel="noopener">View resume ↗</a><a class="btn primary" href="mailto:g.simbu.k@gmail.com">g.simbu.k@gmail.com ↗</a></div></div></section>
+</div>
+</main>
+<footer><div class="wrap footrow"><span>© <span id="year"></span> Silambarasan K G</span><span>Senior Developer · Technical Lead · RPA &amp; Python</span></div></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body></html>
